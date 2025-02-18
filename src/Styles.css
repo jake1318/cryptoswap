@@ -1,0 +1,112 @@
+/* Cypherpunk Themed Global Styles */
+:root {
+  --bg-color: #000;
+  --text-color: #e0e0e0;
+  --accent-color: cyan;
+  --secondary-color: #0099cc;
+  --font-family: "Orbitron", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--accent-color);
+}
+.nav a {
+  margin: 0 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--accent-color);
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+/* Swap Panel */
+.swap-panel {
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 2rem;
+  background: rgba(20, 20, 20, 0.8);
+  box-shadow: 0 0 10px var(--secondary-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Form controls */
+input[type="number"],
+select {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  background: rgba(20, 20, 20, 0.8);
+  color: var(--text-color);
+  box-shadow: 0 0 10px var(--secondary-color);
+  margin: 0.5rem 0;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* Buttons */
+button {
+  padding: 1rem 2rem;
+  background: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  color: var(--bg-color);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--secondary-color);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+button:hover:not(:disabled) {
+  background: var(--bg-color);
+  color: var(--accent-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--accent-color);
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Chart Container */
+.chart-container {
+  background: var(--bg-color);
+  border: 2px solid var(--secondary-color);
+  margin-top: 2rem;
+  padding: 1rem;
+}
